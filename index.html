@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex form</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!--font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="validator.js"></script>
+</head>
+
+<body>
+    <div class="text">
+        <form name="contactForm" onsubmit="return validateForm()" action="#" method="get">
+            <div class="divi div1">
+                <div class="main-text">
+                    <i class="fa-solid fa-moon "></i>
+                    <h1>Sign Up</h1>
+                    <span> To create your own posions</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="myname" >Full Name</label>
+                    <div class="form-main">
+                        <i class="fa fa-user icon"></i>
+                        <input class="input-field" type="text" name="name" id="name" placeholder="Name">
+                    </div>
+                </div>
+                <div class="error" id="nameErr"></div>
+                <div class="form-group">
+                    <label for="magictype">Magic Type</label>
+                    <div class="form-main">
+                        <i class="fa-regular fa-moon icon"></i>
+                        <select class="input-field" id="country" name="country">
+                            <option value="magictype">Select your Magic Type 01</option>
+                            <option value="magictype">Select your Magic Type 02 </option>
+                            <option value="magictype">Select your Magic Type 03</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="error" id="countryErr"></div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="form-main">
+                        <i class="fa-regular fa-envelope icon"></i>
+                        <input class="input-field" type="email" name="email"placeholder="Enter your Mail ">
+                    </div>
+                </div>
+                <div class="error" id="emailErr"></div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="form-main">
+                        <input class="input-field1" type="password" name="password" id="password" placeholder="Write Your Secret Spell "><i
+                            class="fa fa-eye icon1"></i>
+                    </div>
+                </div>
+                <div class="error" id="passwordErr"></div>
+
+                <div class="form-group">
+                    <label for="  Confirm password">Confirm Password</label>
+                    <div class="form-main">
+                        <input class="input-field1" type="password" name="confirmpass" id="confirmpass" placeholder="Confirm Your Secret Spell "><i
+                            class="fa fa-eye icon1"></i>
+                    </div>
+                </div>
+                <div class="error" id="confirmpass"></div>
+
+                <div class="form-group">
+                    <input class="input-field2" type="submit" value="Register">
+                </div>
+
+                <div class="account">
+                    <span>Have a account? <a href="">Sign in</a></span>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
